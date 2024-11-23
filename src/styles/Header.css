@@ -26,12 +26,12 @@
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
-    transition: color 0.3s ease;
+    transition: transform 0.8 ease, box-shadow 0.8 ease; /*not working?*/
   }
   
   .nav .btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px #66FCF1, 0 0 5px #66FCF1; 
+    box-shadow: 0 0 10px #040F1A, 0 0 5px #66FCF1; 
 
   }
   

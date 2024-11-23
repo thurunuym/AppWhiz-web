@@ -2,11 +2,12 @@
 import React from 'react';
 import Header from './components/Header';
 import Quote from './components/Quote';
- {/*import LogoBar from './components/LogoBar';
-import Team from './components/Team';
+import LogoBar from './components/LogoBar';
+import CompanyDescription from './components/CompanyDescription';
+
+{/*import Team from './components/Team';
 import Footer from './components/Footer';
 
-import CompanyDescription from './components/CompanyDescription';
 import OurWork from './components/OurWork'; */}
 
 function App() {
@@ -14,13 +15,17 @@ function App() {
     <>
       <Header />
       <Quote />
-     {/* <CompanyDescription/>
       <LogoBar />
+      <CompanyDescription/>
+      
+
+     {/*
+      
       <OurWork />  
       <Team />
-      <Footer />*/}
-    </>
-  );
-}
+      <Footer /> */}
+  
+  </>);
+};
 
 export default App;

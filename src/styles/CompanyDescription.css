@@ -1,0 +1,66 @@
+.company-description {
+    padding: 2rem;
+    background-color: #040F1A; /* Light gray background */
+    color: #333; /* Dark text color */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color:#ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .company-description p {
+    font-size: 1.2rem;
+    margin:2rem 15rem;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Ensures responsive behavior */
+    margin-top: 1rem;
+  }
+
+  .step {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #66FCF1; /* Border for each step */
+    padding: 1rem;
+    border-radius: 8px;
+    width: 150px; /* Fixed width for steps */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .step img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    color: #66FCF1;
+  }
+  
+  .step span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff; /* Medium text color */
+  }
+  
+  .step:hover {
+    
+    box-shadow: 0 0 10px #66FCF1, 0 0 10px #66FCF1;
+    
+  }
+  
+  @media (max-width: 768px) {
+    .steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step {
+      width: 80%; /* Adjust step width for smaller screens */
+    }
+  }
+  
