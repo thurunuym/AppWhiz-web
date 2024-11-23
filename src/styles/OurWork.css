@@ -1,0 +1,56 @@
+/* src/styles/OurWork.css */
+
+.our-work {
+    background: black;
+    display: flex;
+    flex-direction: column; /* Stack heading and cards container vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Add padding to the container */
+}
+
+.our-work h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.cards-container {
+    display: flex; /* Use flexbox for card layout */
+    flex-direction: row;
+    flex-wrap: nowrap; /* Allow wrapping of cards if necessary */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.card {
+    
+    background: #E7E7E7; /* White background for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Clip content that overflows the card */
+    width: 300px; /* Fixed width for cards */
+    text-align: center; /* Center the text and image */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card img {
+    width: 100%; /* Full width image */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images fit nicely */
+}
+
+.card h3 {
+    font-size: 1.5rem; /* Large font for titles */
+    margin: 15px 0 10px; /* Add spacing */
+    color: #333333; /* Dark text color */
+}
+
+.card p {
+    font-size: 1rem; /* Standard font size */
+    color: #666666; /* Subtle text color */
+    padding: 0 15px 15px; /* Spacing inside the card */
+}

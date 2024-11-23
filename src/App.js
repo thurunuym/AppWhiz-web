@@ -4,11 +4,10 @@ import Header from './components/Header';
 import Quote from './components/Quote';
 import LogoBar from './components/LogoBar';
 import CompanyDescription from './components/CompanyDescription';
-
-{/*import Team from './components/Team';
+import Team from './components/Team';
 import Footer from './components/Footer';
+import OurWork from './components/OurWork';
 
-import OurWork from './components/OurWork'; */}
 
 function App() {
   return (
@@ -17,15 +16,13 @@ function App() {
       <Quote />
       <LogoBar />
       <CompanyDescription/>
-      
-
-     {/*
-      
-      <OurWork />  
+      <OurWork /> 
       <Team />
-      <Footer /> */}
-  
-  </>);
+      <Footer/>
+    
+
+    </>
+  );
 };
 
 export default App;

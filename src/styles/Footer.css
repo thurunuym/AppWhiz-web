@@ -1,0 +1,13 @@
+.footer {
+    background-color: #000000; /* Dark background for contrast */
+    color: #ffffff; /* White text for readability */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add spacing around the content */
+    font-size: 1rem; /* Adjust text size */
+  }
+  
+  .footer p {
+    margin: 0; 
+    font-family: 'Arial', sans-serif; 
+  }
+  

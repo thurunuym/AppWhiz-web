@@ -32,8 +32,18 @@
     text-align: left; /* Ensures the text is left-aligned */
 }
 
+.hero-text p {
+    font-size: 1.2rem;
+    white-space: nowrap; /* Prevent wrapping while typing */
+    overflow: hidden; /* Hide overflowing text */
+    border-right: 2px solid #66FCF1; /* Cursor effect */
+    animation: typewriter 7s steps(40, end), blink 0.5s step-end infinite alternate;
+    animation-delay: 2s; /* Start after the heading animation (optional) */
+    animation-iteration-count: infinite; /* Repeat typing animation */
+  }
+
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
     font-weight: bold;
@@ -54,3 +64,29 @@
     box-shadow: 0 0 10px #66FCF1, 0 0 10px #66FCF1;
     transform: scale(1.05);
 }
+
+/* Typewriter effect */
+@keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    70% {
+      width: 100%; /* Full text visible */
+    }
+    85% {
+      width: 100%; /* Pause briefly at the end */
+    }
+    100% {
+      width: 0; /* Reset text to start typing again */
+    }
+  }
+  
+  /* Blinking cursor */
+  @keyframes blink {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: #66FCF1;
+    }
+  }

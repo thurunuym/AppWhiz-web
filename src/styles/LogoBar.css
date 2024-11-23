@@ -1,17 +1,38 @@
 /* src/styles/LogoBar.css */
 .logo-bar {
     height: 140px;
-    padding: px 0;
+    padding: 5px 0;
     overflow: hidden;
     background-color: #000000;
     white-space: nowrap;
+    position: relative;
     
+}
+
+.logo-bar:before {
+    position: absolute;
+    top:0;
+    left:0;
+    width:450px;
+    height: 100%;
+    background: linear-gradient(to right,#000000 0% ,#000000 18% ,transparent 100%);
+    content:"";
+    z-index:2;
+}
+.logo-bar:after {
+    position: absolute;
+    top:0;
+    right:0;
+    width:450px;
+    height: 100%;
+    background: linear-gradient(to left,#000000 0% ,#000000 18% ,transparent 100%);
+    content:"";
+    z-index:2;
 }
 
 .logo-container {
     display: inline-block;
-    animation: 15s slide infinite linear;
-
+    animation: slide 15s infinite linear;
 }
 
 .logo-bar img {
