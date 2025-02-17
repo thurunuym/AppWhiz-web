@@ -1,4 +1,4 @@
-// src/App.js
+import {  Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Header from './components/Header';
 import Quote from './components/Quote';
@@ -9,22 +9,23 @@ import Footer from './components/Footer';
 import OurWork from './components/OurWork';
 import Contact from './components/Contact';
 
-
 function App() {
   return (
-    <>
+<>
       <Header />
       <Quote />
       <LogoBar />
-      <CompanyDescription/>
-      <OurWork /> 
+      <CompanyDescription />
+      <OurWork />
       <Team />
-      <Contact/>
-      <Footer/>
-    
 
-    </>
+      <Routes>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+      <Footer />
+</>
   );
-};
+}
 
 export default App;
