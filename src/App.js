@@ -7,6 +7,7 @@ import CompanyDescription from './components/CompanyDescription';
 import Team from './components/Team';
 import Footer from './components/Footer';
 import OurWork from './components/OurWork';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <CompanyDescription/>
       <OurWork /> 
       <Team />
+      <Contact/>
       <Footer/>
     
 

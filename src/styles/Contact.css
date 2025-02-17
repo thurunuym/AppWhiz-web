@@ -1,0 +1,24 @@
+.main{
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+
+}
+
+.left{
+    height: 80vh;
+    width: 100vh;
+    background-color: aliceblue;
+    margin: 20px;
+}
+
+.right{
+    height: 80vh;
+    width: 100vh;
+    margin: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
